@@ -8,8 +8,8 @@ wordpress_sites:
       redirects:
       - www.befreenow.space
     local_path: ../site
-    branch: master
-    repo: git@github.com:example/example.com.git
+    branch: main
+    repo: git@github.com:dawiehyman/befreenow.git
     repo_subtree_path: site
     multisite:
       enabled: false
