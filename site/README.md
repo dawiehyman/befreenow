@@ -53,10 +53,28 @@ Bedrock is a WordPress boilerplate for developers that want to manage their proj
 
 See the [Bedrock installation documentation](https://roots.io/bedrock/docs/installation/).
 
-## Stay Connected
 
-- Join us on Discord by [sponsoring us on GitHub](https://github.com/sponsors/roots)
-- Participate on [Roots Discourse](https://discourse.roots.io/)
-- Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-- Read the [Roots Blog](https://roots.io/blog/)
-- Subscribe to the [Roots Newsletter](https://roots.io/newsletter/)
+THe above can be useful in installng Trellis and Vagrant. 
+Here are also some more rough notes to assist:
+Install trellis-cli 
+https://github.com/roots/trellis-cli
+  
+this should work on Mac.
+  brew install roots/tap/trellis-cli
+
+  Vagrant can be tricky on Mac M silicon, but it seems the latest versions work.
+  The brew approach did not work, so I followed the "manual" approach:
+  - Download the vagrant pacakge : get the latest from vagrant site.
+  .
+  - Fnally check , with $ sudo vagrant --version
+    Also for VMWare, this was needed:
+
+Now install vagrant Vmware Utility (check for latest bht this shold workl : https://releases.hashicorp.com/vagrant-vmware-utility/1.0.22/vagrant-vmware-utility_1.0.22_darwin_amd64.dmg
+
+  - Now install vagrant manager on M1 machine : brew install vagrant-manager --cask 
+
+It is KEY to use a vagrant box that is arm_64 compatible for APple M Siicon.
+
+
+
+  
