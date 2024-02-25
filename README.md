@@ -1,3 +1,13 @@
+# Remote server setup:
+Make sure that ipv6 is supported.
+
+also, once up generate an SSH key Locally, and copy that public key int available_hosts in ~/.ssh  on the new machine
+
+For Azure, add 80, and 443 inbound rules to a Network Security Group on the NIC.
+
+update domain dns records with external IP address.
+
+
 
 In sections under site and trellis there may be more info on how to install bedrock/trellis and vagrant
 
