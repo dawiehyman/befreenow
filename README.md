@@ -150,7 +150,8 @@ ansible-playbook server.yml -e env=production
 
 
 ## deploy , or update Production!
-After each Provision, Prior to deployment ,there seems to be a bug:
+After each Provision, you may have to do this. there seems to be a bug:
+
 ssh into remote server using azureuser.
 then sudo chown -R azureuser:www-data /srv/www
 
