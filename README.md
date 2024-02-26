@@ -137,6 +137,14 @@ ubuntu_azurevm
 [web]
 ubuntu_azurevm
 
+
+also to prevent a rights issue,
+
+in all/users.yml,
+change
+web_user: web
+to:
+web_user: azureuser
 ## provision server
 Configure Git in wordpress_sites:
 
