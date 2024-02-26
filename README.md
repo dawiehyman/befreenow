@@ -1,9 +1,10 @@
 # Remote server setup:
-Make sure that ipv6 is supported.
+Make sure that ipv6 is implemented on network , with subnets
 
 also, once up generate an SSH key Locally, and copy that public key int available_hosts in ~/.ssh  on the new machine
 
 For Azure, add 80, and 443 inbound rules to a Network Security Group on the NIC.
+make sure web service is running prior to pinging 80 and 443.
 
 update domain dns records with external IP address.
 
@@ -131,7 +132,7 @@ for both production and optionlaly staging, put this in both (lets say we went w
 .
 
 [production]
-ubuntu_azurevm ansible_user=azureuser
+ubuntu_azurevm
 
 [web]
 ubuntu_azurevm
