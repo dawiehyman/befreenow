@@ -798,18 +798,3 @@ function twentytwenty_get_elements_array() {
 	return apply_filters( 'twentytwenty_get_elements_array', $elements );
 }
 
-function create_event_post_type() {
-    register_post_type('event',
-        array(
-            'labels'      => array(
-                'name'          => __('Events', 'textdomain'),
-                'singular_name' => __('Event', 'textdomain'),
-            ),
-            'public'      => true,
-            'has_archive' => true,
-            'supports'    => array('title', 'editor', 'thumbnail', 'excerpt', 'custom-fields'),
-            'rewrite'     => array('slug' => 'events'),
-        )
-    );
-}
-add_action('init', 'create_event_post_type');
