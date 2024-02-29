@@ -2,7 +2,7 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-ubuntu_azurevm ansible_user=azureuser
+ubuntu_azurevm
 
 [web]
 ubuntu_azurevm

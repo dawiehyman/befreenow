@@ -142,8 +142,10 @@ also to prevent a rights issue,
 
 in all/users.yml,
 change
+admin_user: admin
 web_user: web
 to:
+admin_user: azureuser
 web_user: azureuser
 ## provision server
 Configure Git in wordpress_sites:
